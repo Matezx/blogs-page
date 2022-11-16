@@ -206,6 +206,9 @@ Section
 Post Generales
 =========================================================================
 */
+.container{
+    padding: 0 0rem 2rem;
+}
 
 .post__thumbnail{
     border-radius: var(--card-border-radius-5);
@@ -226,11 +229,14 @@ Post Generales
 }
 
 .post__author-avatar{
-    width: 2.5rem;
-    height: 2.5rem;
-    border-radius: var(--card-border-radius-3);
-    overflow: hidden;
+width: 2.5rem;
+height: 2.5rem;
+border-radius: 20%;
+overflow: hidden;
+border: 0.3rem solid var(--color-primary);
+object-fit: cover;
 }
+
 
 
 /* ====================================================================== 
@@ -473,5 +479,139 @@ nav button#close__nav-ntn {
     margin-left: 2rem;
     border: 0;
 }
+
+.featured__container {
+    gap: 3rem;
+}
+
+.post__container {
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.footer__container {
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.post__author-avatar{
+    height: max-content;
+    border-radius: 20%;
+    overflow: hidden;
+    border: 0.3rem solid var(--color-primary);
+    }
+}
+
+/* ====================================================================== 
+Media Queries ( Pantallas Pequeñas )===================================================================
+*/
+
+@media screen and (max-width: 610px){
+    
+    section {
+            margin-top: 2rem;
+        }
+
+    h1 {
+        font-size: 2rem;
+    }   
+    
+    .featured {
+        margin-top: 8rem;
+    }
+
+    .featured__container {
+        grid-template-columns: 1fr;
+        text-align: center;
+        
+    }
+
+    .post__container{
+        grid-template-columns:  1fr ;
+        text-align: center;
+    }
+
+    .post__cambio{
+        margin: 02rem 9rem;
+    }
+
+        
+
+    .posts__container{
+        grid-template-columns: 1fr;
+    }
+    
+    .post__info  .post__author{
+        text-align: start;
+    }
+    
+    .category__buttons-container {
+        grid-template-columns: 1fr 2fr ;
+}
+
+    .footer__container{
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 2rem;
+    }
+
+}
+
+/* ====================================================================== 
+Media Queries ( Pantallas Mas pequeñas)===================================================================
+*/
+
+@media screen and (max-width: 370px){
+
+section {
+        margin-top: 1.5rem;
+    }
+
+h1 {
+    font-size: 1rem;
+}   
+
+.featured {
+    margin-top: 6rem;
+}
+
+.featured__container {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 0;
+}
+
+.post__container{
+    grid-template-columns:  1fr ;
+    text-align: center;
+}
+
+
+.post__author-avatar{
+    height: max-content;
+    border-radius: 20%;
+    overflow: hidden;
+    border: 0.3rem solid var(--color-primary);
+    }
+    
+
+.posts__container{
+    grid-template-columns: 1fr;
+}
+
+.post__info  .post__author{
+    text-align: start;
+}
+
+.category__buttons-container {
+    grid-template-columns: 1fr 2fr ;
+}
+
+.footer__container{
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 2rem;
+}
+
 
 }
