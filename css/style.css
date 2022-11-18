@@ -356,6 +356,118 @@ footer ul a:hover{
     margin-top: 4rem;
 }
 
+/* ====================================================================== 
+SEARCH
+=========================================================================
+*/
+
+.search__bar{
+    margin-top: 7rem;
+}
+
+.search__bar-container{
+    position: relative;
+    width: 30rem;
+    background-color: var(--color-gray-900);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    padding: 0.6rem 1rem;
+    border-radius: var(--card-border-radius-2);
+    color: var(--color-gray-300);
+}
+
+.search__bar-container > div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.search__bar input {
+    background: transparent;
+    margin-left: 0.7rem;
+    padding: 0.5rem 0;
+    width: 100%;
+}
+
+.search__bar input::placeholder{
+    color: var(--color-gray-300);
+}
+
+
+/* ====================================================================== 
+BUTTON
+=========================================================================
+*/
+
+.btn{
+    display: inline-block;
+    width: fit-content;
+    padding: 0.6rem 1.2rem;
+    background-color: var(--color-primary);
+    border-radius: var(--card-border-radius-2);
+    cursor: pointer;
+    transition: var(--transition);
+    color: var(--color-white);
+}
+
+/* ====================================================================== 
+SINGLE POST
+=========================================================================
+*/
+
+.singlepost{
+    margin: 6rem 0 2rem;
+}
+
+.singlepost__container{
+    width: var(--form-width);
+    background: var(--color-gray-900);
+    padding: 1rem 2rem 3rem;
+}
+
+.singlepost__thumbnail{
+    margin: 1.5rem 0 1rem;
+}
+
+.singlepost__container p{
+    margin-top: 1rem;
+    line-height: 1.7;
+}
+
+
+/* ====================================================================== 
+CATEGORIAS
+=========================================================================
+*/
+
+.category__title{
+    height: 15rem;
+    margin-top: 4.5rem;
+    background: var(--color-gray-900);
+    display: grid;
+    place-items: center;
+}
+
+/* ====================================================================== 
+ABOUT PAGE
+=========================================================================
+*/
+
+.empty__page{
+    height: 70vh;
+    display: grid;
+    place-content: center;
+}
+
+
+
+
+
+
+
+
 
 
 /* ====================================================================== 
@@ -500,6 +612,13 @@ nav button#close__nav-ntn {
     overflow: hidden;
     border: 0.3rem solid var(--color-primary);
     }
+
+/* BLOG*/
+
+.search__bar-container{
+    width: var(--container-width-md);
+    }
+
 }
 
 /* ====================================================================== 
@@ -554,6 +673,27 @@ Media Queries ( Pantallas Pequeñas )===========================================
         text-align: center;
         gap: 2rem;
     }
+
+
+/* ====================================================================== 
+BLOG===================================================================
+*/
+
+
+.search__bar-container{
+    width: var(--container-width-md);
+}
+
+
+/* ====================================================================== 
+Single POST===================================================================
+*/
+
+.singlepost__container{
+    background-color: transparent;
+    padding: 0;
+}
+
 
 }
 
@@ -612,6 +752,9 @@ h1 {
     text-align: center;
     gap: 2rem;
 }
-
-
 }
+
+
+
+
+
